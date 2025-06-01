@@ -1,26 +1,30 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { Project_items } from "./Project_items";
+import projimg_github from "../assets/img/project-github.png"; // background Image
+import { Row } from "react-bootstrap";
 
-export const Projects = () => {
-  const [repos, setRepos] = useState([]);
+export const Github_items = () => {
+  const [githubProjects, setGithubProjects] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/YOUR_USERNAME/repos')
-      .then(res => res.json())
-      .then(data => setRepos(data));
+    fetch("https://api.github.com/users/Kyapy/repos")
+      .then((res) => res.json())
+      .then((data) => {
+        const mapped = data.map(repo => ({
+          title: repo.name,
+          description: repo.description || "No description available.",
+          imgUrl: projimg_github,
+          link: repo.html_url,
+        }));
+        setGithubProjects(mapped);
+      });
   }, []);
 
   return (
-    <section className="project" id="projects">
-      <h2>GitHub Projects</h2>
-      <div className="project-grid">
-        {repos.map((repo) => (
-          <div key={repo.id} className="project-card">
-            <h4>{repo.name}</h4>
-            <p>{repo.description}</p>
-            <a href={repo.html_url} target="_blank" rel="noreferrer">View Repo</a>
-          </div>
-        ))}
-      </div>
-    </section>
+    <Row>
+      {githubProjects.map((project, index) => (
+        <Project_items key={index} {...project} />
+      ))}
+    </Row>
   );
 };

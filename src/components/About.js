@@ -1,11 +1,27 @@
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
+import logo_python from "../assets/img/python.svg";
 import colorSharp from "../assets/img/color-sharp.png";
-import { Container, Row, Col } from "react-bootstrap";
-import { Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 export const About = () => {
+
+  const skills_programming = [
+    {
+      name: "Python",
+      imgUrl: logo_python,
+    }
+  ]
+
+  const skills_gameDevelopment = [
+
+  ]
+
+  const skills_designTool = [
+
+  ]
+
   return (
 <section className="about" id="about">
       <Container>
@@ -24,38 +40,50 @@ export const About = () => {
           <Col>
             <h3 className="text-center mb-4">Skills</h3>
             <Row className="g-4 text-center">
-              <Col md={4}>
-                <Card className="h-100">
-                  <Card.Img variant="top" src={meter1} />
-                  <Card.Body>
-                    <Card.Title>Web Development</Card.Title>
-                    <Card.Text>React, HTML, CSS, JavaScript</Card.Text>
-                  </Card.Body>
-                </Card>
+              {/* Programming */}
+              <Col md={4} className="mb-4">
+                <div className="about-box">
+                  <h4 className="text-center">Programming</h4>
+                  <div className="image-grid">
+                    <img src={logo_python} alt="Python" />
+                    <img src={meter2} alt="C++" />
+                    <img src={meter3} alt="C#" />
+                    <img src={meter1} alt="Git" />
+                  </div>
+                </div>
               </Col>
-              <Col md={4}>
-                <Card className="h-100">
-                  <Card.Img variant="top" src={meter2} />
-                  <Card.Body>
-                    <Card.Title>Brand Identity</Card.Title>
-                    <Card.Text>UI/UX, Branding, Design Systems</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card className="h-100">
-                  <Card.Img variant="top" src={meter3} />
-                  <Card.Body>
-                    <Card.Title>3D Art & Design</Card.Title>
-                    <Card.Text>Blender, SpeedTree, Unity</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+
+          {/* Web Development */}
+          <Col md={4} className="mb-4">
+            <div className="about-box">
+              <h4 className="text-center">Web Development</h4>
+              <div className="image-grid">
+                <img src={meter2} alt="HTML" />
+                <img src={meter3} alt="CSS" />
+                <img src={meter1} alt="JavaScript" />
+                <img src={meter2} alt="React" />
+              </div>
+            </div>
+          </Col>
+
+          {/* Design Tools */}
+          <Col md={4} className="mb-4">
+            <div className="about-box">
+              <h4 className="text-center">Design Tools</h4>
+              <div className="image-grid">
+                <img src={meter3} alt="Figma" />
+                <img src={meter2} alt="Photoshop" />
+                <img src={meter1} alt="GitHub" />
+                <img src={meter3} alt="CLI" />
+              </div>
+            </div>
+          </Col>
             </Row>
           </Col>
         </Row>
-
+      </Container>
         {/* Experience Section */}
+        <Container>
         <Row className="mb-5">
           <Col>
             <h3 className="text-center mb-4">Experience</h3>
@@ -65,8 +93,9 @@ export const About = () => {
             </ul>
           </Col>
         </Row>
-
+      </Container>
         {/* Education Section */}
+        <Container>
         <Row>
           <Col>
             <h3 className="text-center mb-4">Qualifications</h3>
