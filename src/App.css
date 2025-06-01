@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  text-align: center;
+  max-width: 200px;
+}
+
