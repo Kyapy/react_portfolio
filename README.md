@@ -43,8 +43,29 @@ To run this application locally:
 - [YouTube Data API v3](https://developers.google.com/youtube/v3) — Used to load videos from a specific playlist
 
 # Application Architecture
-<pre> ```plaintext src/ ├── components/ │ ├── About.js # Skills and software cards │ ├── Banner.js # Landing page banner │ ├── Contact.js # Contact section │ ├── Footer.js # Page footer │ ├── github_items.js # GitHub project fetcher │ ├── NavigationBar.js # Top navigation bar │ ├── Porfolio.js # Portfolio section with search and tabs │ ├── Project_items.js # Reusable project card component │ └── youtube_items.js # YouTube playlist video fetcher │ ├── assets/ │ └── img/ # All images and logos │ └── font/ # All custom fonts │ ├── App.js # Root component ├── App.css # Global styles ├── index.js # App entry point ├── index.css # Global CSS styles └── .env # API keys for YouTube ``` </pre>
-
+```plaintext
+src/
+├── components/
+│   ├── About.js              # Skills and software cards
+│   ├── Banner.js             # Landing page banner
+│   ├── Contact.js            # Contact section
+│   ├── Footer.js             # Page footer
+│   ├── github_items.js       # GitHub project fetcher
+│   ├── NavigationBar.js      # Top navigation bar
+│   ├── Porfolio.js           # Portfolio section with search and tabs
+│   ├── Project_items.js      # Reusable project card component
+│   └── youtube_items.js      # YouTube playlist video fetcher
+│
+├── assets/
+│   └── img/                  # All images and logos
+│   └── font/                 # All custom fonts
+│
+├── App.js                    # Root component
+├── App.css                   # Global styles
+├── index.js                  # App entry point
+├── index.css                 # Global CSS styles
+└── .env 
+```
 
 # Reporting Issues
 If you find a bug or want to request a feature:
