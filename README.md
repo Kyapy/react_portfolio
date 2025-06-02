@@ -1,2 +1,2 @@
 # react_portfolio
- Portfolio website using Reacr
+ Portfolio website using React

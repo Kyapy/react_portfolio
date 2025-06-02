@@ -106,8 +106,9 @@ export const About = () => {
           <Col>
             <h2 className="text-center">About Me</h2>
             <p className="text-center">
-              A brief summary about your background, interests, and goals.
-              This is your opportunity to make a strong first impression.
+              Hi, I'm a passionate developer and 3D artist who loves bringing creative ideas to life—whether through code or visuals. 
+              I enjoy building cool web apps and crafting 3D models for games and animation. 
+              I'm always learning new tools and finding fun ways to mix tech and art.
             </p>
           </Col>
         </Row>
@@ -174,8 +175,8 @@ export const About = () => {
           <Col>
             <h3 className="text-center mb-4">Experience</h3>
             <ul>
-              <li><strong>3D Generalist at Myriad Studios</strong> – Created digital doubles and 3D assets for film/TV.</li>
-              <li><strong>Bus Driver (Part-time)</strong> – Demonstrated time management and communication.</li>
+              <li><strong>3D Generalist at Myriad Studios (Full-time)</strong> – Created digital doubles and 3D assets for film/TV.</li>
+              <li><strong>3D Artist Traineeship at Lightmare Studios</strong> – Created 3D assets for Game development.</li>
             </ul>
           </Col>
         </Row>
@@ -186,14 +187,30 @@ export const About = () => {
           <Col>
             <h3 className="text-center mb-4">Qualifications</h3>
             <ul>
-              <li>Graduate Diploma in Computer Science (in progress)</li>
+              <li>Graduate Diploma in Computer Science</li>
               <li>Bachelor of Fine Arts (Animation)</li>
             </ul>
           </Col>
         </Row>
       </Container>
-
-      <img className="background-image-left" src={colorSharp} alt="Background decoration" />
+        {/* Publication Section */}
+        <Container>
+        <Row>
+          <Col>
+            <h3 className="text-center mb-4">Publication</h3>
+            <ul>
+              <li>Voltron (2026) - Live Action Flim</li>
+              <li>Monarch: Legacy of Monsters Season 2 (2026) - TV Series</li>
+              <li>The Bluff (2025) - Live Action Flim</li>
+              <li>Smurfs (2025) - Animation Flim</li>
+              <li>Mortal Kombat II (2025) - Live Action Flim</li>
+              <li>The Fall Guys (2024) - Live Action Flim</li>
+              <li>Apples Never Fall (2024) - TV Series</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+      
     </section>
   )
 }
