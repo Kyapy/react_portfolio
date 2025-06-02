@@ -1,2 +1,84 @@
 # react_portfolio
  Portfolio website using React
+
+# Purpose of the Application
+This is a personal portfolio web application built with React. It showcases my development and 3D art projects, including GitHub repositories and YouTube videos. The goal is to demonstrate my technical skills, creative works, and provide a platform for others to explore my projects.
+
+# Features
+- Dynamic GitHub project cards
+- YouTube video integration
+- Live search filtering
+- Responsive design
+
+# Installation
+
+To run this application locally:
+
+1. **Clone the repository:**
+2.  Run **npm install** to install dependencies
+3.  Create **.env** file in root directory and insert your YouTube API credentials.
+4.  Run **npm start**
+5.  The app will be available at **http://localhost:3000**.
+ 
+  
+# Dependencies
+- `@testing-library/dom` — ^10.4.0  
+- `@testing-library/jest-dom` — ^6.6.3  
+- `@testing-library/react` — ^16.3.0  
+- `@testing-library/user-event` — ^13.5.0  
+- `animate.css` — ^4.1.1  
+- `bootstrap` — ^5.3.6  
+- `react` — ^19.1.0  
+- `react-bootstrap` — ^2.10.10  
+- `react-bootstrap-icons` — ^1.11.6  
+- `react-dom` — ^19.1.0  
+- `react-on-screen` — ^2.1.1  
+- `react-router-dom` — ^7.6.1  
+- `react-scripts` — 5.0.1  
+- `web-vitals` — ^2.1.4  
+
+### 🌐 External APIs
+
+- [GitHub REST API](https://docs.github.com/en/rest) — Used to fetch public repositories  
+- [YouTube Data API v3](https://developers.google.com/youtube/v3) — Used to load videos from a specific playlist
+
+# Application Architecture
+src/
+├── components/
+│   ├── About.js
+│   ├── Banner.js
+│   ├── Contact.js
+│   ├── Footer.js
+│   ├── github_items.js
+│   ├── NavigationBar.js
+│   ├── Porfolio.js
+│   ├── Project_items.js
+│   └── youtube_items.js
+│ 
+├── assets/
+│   └── img/     ← All images and logos
+│   └── font/    ← All fonts
+│
+├── App.js
+├── App.css
+├── index.js
+├── index.css
+└── .env         ← API keys
+
+
+
+# Reporting Issues
+If you find a bug or want to request a feature:
+- Open an Issue
+- Include steps to reproduce, screenshots (if possible), and your environment info
+
+# How to Contribute
+
+1. Fork this repository.
+2. Create a new branch: git checkout -b feature-name.
+3. Make your changes and commit: git commit -m 'Add feature'.
+4. Push to the branch: git push origin feature-name.
+5. Open a Pull Request.
+
+Contributions such as adding new sections, fixing bugs, or improving design are welcome.
+
