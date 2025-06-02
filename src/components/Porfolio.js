@@ -30,6 +30,13 @@ export const Portfolio = () => {
                       <Nav.Link eventKey="third">Live2D</Nav.Link>
                     </Nav.Item>
                   </Nav>
+                  <input
+                    className="form-control search-bar"
+                    type="text"
+                    placeholder="Search projects..."
+                    //value={searchTerm}
+                    //onChange={(e) => setSearchTerm(e.target.value)}
+                  />
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>

@@ -182,6 +182,7 @@ span.navbar-text {
 }
 
 .social-icon a img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
@@ -537,4 +538,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.search-bar {
+  width: 200px !important;
+  margin-left: 1000px;
+  margin-bottom: 20px;
 }

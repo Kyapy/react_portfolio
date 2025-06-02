@@ -1,25 +1,102 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import logo_python from "../assets/img/python.svg";
+// Logo images 
+import logo_CSharp from "../assets/img/CSharp.svg"
+import logo_CPlusPlus from "../assets/img/CPlusPlus.svg"
+import logo_python from "../assets/img/Python.svg";
+import logo_react from "../assets/img/React.svg"
+import logo_JS from "../assets/img/JS.svg";
+import logo_HTML from "../assets/img/HTML.svg";
+import logo_CSS from "../assets/img/CSS.svg";
+
+import logo_Unity from "../assets/img/Unity.svg";
+import logo_UE from "../assets/img/unreal-engine.png";
+
+import logo_Blender from "../assets/img/Blender.svg";
+import logo_Maya from "../assets/img/Maya.svg";
+import logo_SP from "../assets/img/Substance_3D_Painter.svg";
+import logo_Cubism from "../assets/img/Live2DCubism.png";
+
 import colorSharp from "../assets/img/color-sharp.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 export const About = () => {
 
+  // Logo for programming langauges
   const skills_programming = [
+
+    {
+      name: "CSharp",
+      imgUrl: logo_CSharp,
+    },
+
+    {
+      name: "CSPlusPlus",
+      imgUrl: logo_CPlusPlus,
+    },
+
     {
       name: "Python",
       imgUrl: logo_python,
-    }
+    },
+
+    {
+      name: "React",
+      imgUrl: logo_react,
+    },
+
+    {
+      name: "JS",
+      imgUrl: logo_JS,
+    },
+
+        {
+      name: "HTML",
+      imgUrl: logo_HTML,
+    },
+
+        {
+      name: "CSS",
+      imgUrl: logo_CSS,
+    },
   ]
 
+  // Logo for game development
   const skills_gameDevelopment = [
 
+    {
+      name: "Unreal Engine",
+      imgUrl: logo_UE,
+    },
+
+    {
+      name: "Unity",
+      imgUrl: logo_Unity,
+    },
+
+
   ]
 
+  // Logo for 2D/3D art programs
   const skills_designTool = [
 
+    {
+      name: "Blender",
+      imgUrl: logo_Blender,
+    },
+
+    {
+      name: "Maya",
+      imgUrl: logo_Maya,
+    },
+
+    {
+      name: "Substance 3D Painter",
+      imgUrl: logo_SP,
+    },
+
+    {
+      name: "Live2D Cubism",
+      imgUrl: logo_Cubism,
+    },
   ]
 
   return (
@@ -45,23 +122,29 @@ export const About = () => {
                 <div className="about-box">
                   <h4 className="text-center">Programming</h4>
                   <div className="image-grid">
-                    <img src={logo_python} alt="Python" />
-                    <img src={meter2} alt="C++" />
-                    <img src={meter3} alt="C#" />
-                    <img src={meter1} alt="Git" />
+                    {
+                      skills_programming.map (logos => (
+                      < div >
+                      <img src={logos.imgUrl} />
+                      </div>
+                      ))
+                    }
                   </div>
                 </div>
               </Col>
 
-          {/* Web Development */}
+          {/* Game Development */}
           <Col md={4} className="mb-4">
             <div className="about-box">
-              <h4 className="text-center">Web Development</h4>
+              <h4 className="text-center">Game Development</h4>
               <div className="image-grid">
-                <img src={meter2} alt="HTML" />
-                <img src={meter3} alt="CSS" />
-                <img src={meter1} alt="JavaScript" />
-                <img src={meter2} alt="React" />
+                {
+                  skills_gameDevelopment.map (logos => (
+                  < div >
+                  <img src={logos.imgUrl} />
+                  </div>
+                  ))
+                }
               </div>
             </div>
           </Col>
@@ -71,10 +154,13 @@ export const About = () => {
             <div className="about-box">
               <h4 className="text-center">Design Tools</h4>
               <div className="image-grid">
-                <img src={meter3} alt="Figma" />
-                <img src={meter2} alt="Photoshop" />
-                <img src={meter1} alt="GitHub" />
-                <img src={meter3} alt="CLI" />
+                {
+                  skills_designTool.map (logos => (
+                  < div >
+                  <img src={logos.imgUrl} />
+                  </div>
+                  ))
+                }
               </div>
             </div>
           </Col>
