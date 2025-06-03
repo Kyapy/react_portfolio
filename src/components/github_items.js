@@ -17,6 +17,7 @@ export const Github_items = ({ searchTerm }) => {
     })
       .then((data) => {
         const mapped = data.map((repo) => ({
+          // Assign data to project_item structure
           title: repo.name,
           description: repo.description || "No description available.",
           imgUrl: projimg_github,
@@ -27,7 +28,7 @@ export const Github_items = ({ searchTerm }) => {
       .catch((err) => setError(err.message));;
   }, []);
 
-  // Search option
+  // Search function
   const filtered = githubProjects.filter(project =>
     (project.title && project.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
     (project.description && project.description.toLowerCase().includes(searchTerm.toLowerCase()))

@@ -15,7 +15,6 @@ import logo_Maya from "../assets/img/Maya.svg";
 import logo_SP from "../assets/img/Substance_3D_Painter.svg";
 import logo_Cubism from "../assets/img/Live2DCubism.png";
 
-import colorSharp from "../assets/img/color-sharp.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 export const About = () => {

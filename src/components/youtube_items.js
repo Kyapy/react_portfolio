@@ -28,6 +28,7 @@ export const Youtube_items = ({ searchTerm }) => {
       })
       .then((data) => {
         const formatted = data.items.map((video) => ({
+          // Assign data to project_item structure
           title: video.snippet.title,
           description: "",
           imgUrl: video.snippet.thumbnails.high.url,
