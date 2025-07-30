@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-
+import logo from './assets/img/logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavigationBar } from "./components/NavigationBar";
@@ -15,20 +10,14 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <NavigationBar />
-        
-        <Routes>
-          <Route path="/" element={<Banner />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-        </Routes>
-
-        <Contact />
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <NavigationBar />
+      <Banner />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
