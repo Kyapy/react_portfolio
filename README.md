@@ -1,4 +1,4 @@
-![React_portfolio_git2](https://github.com/user-attachments/assets/581563c6-dfe7-4ddb-9426-b88ca1301768)![React_portfolio_git3](https://github.com/user-attachments/assets/b8db6a01-a359-47d1-80f4-f9094a2fcf20)![React_portfolio_git1](https://github.com/user-attachments/assets/3eb0a614-397a-4b29-9742-cde5f0e2685f)# react_portfolio
+
  Portfolio website using React
 
 # Purpose of the Application
