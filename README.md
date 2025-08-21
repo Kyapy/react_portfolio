@@ -1,4 +1,4 @@
-# react_portfolio
+![React_portfolio_git2](https://github.com/user-attachments/assets/581563c6-dfe7-4ddb-9426-b88ca1301768)![React_portfolio_git3](https://github.com/user-attachments/assets/b8db6a01-a359-47d1-80f4-f9094a2fcf20)![React_portfolio_git1](https://github.com/user-attachments/assets/3eb0a614-397a-4b29-9742-cde5f0e2685f)# react_portfolio
  Portfolio website using React
 
 # Purpose of the Application
@@ -9,6 +9,19 @@ This is a personal portfolio web application built with React. It showcases my d
 - YouTube video integration
 - Live search filtering
 - Responsive design
+
+# Preview
+
+Interative animation
+![React_portfolio_git1](https://github.com/user-attachments/assets/e367433d-5f98-4602-a2f0-22fb8fc29793)
+
+
+![React_portfolio_git2](https://github.com/user-attachments/assets/20176a34-3540-449a-ba55-89f56352971d)
+
+
+![React_portfolio_git3](https://github.com/user-attachments/assets/eedeb4df-38d5-4f5e-96b0-9d5cfb4f2ae7)
+
+
 
 # Installation
 
